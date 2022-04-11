@@ -1,9 +1,9 @@
 :root {
     --primary-theme-color: #b12a2a;
     --secondary-theme-color: #ff0000;
-    --text-color: #fff;
-    --shadow-color: #ffd900;
-    --button-color: #000dff;
+    --text-color: #ffd700;
+    --shadow-color: #0217ff;
+    --button-color: #1e00ff;
     --button-color-active: #fff;
     --button-text-color: #000;
     --primary-highlight: #ffd700;
@@ -149,10 +149,28 @@
 .article{
     height: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    
+}
+.article__form{
+    display: flex;
     gap: 1rem;
+    flex-direction: column;
+    width: 300PX;
+}
+.article_subContaider{
+    display: flex;
+    width: 300PX;
+    justify-content: space-between;
+}
+.article__textarea{
+    width: 200px;
+}
+.article__input{
+    width: 200px;
 }
 .titulo{
     margin: auto;
@@ -169,29 +187,7 @@
     padding: 0;
     text-align: center;
 }
-
-.article-contenedor{
-    display: flex;
-    flex-direction: column;
-    max-width: 300px;
-    margin: auto;
-    padding: 1rem;
-    border-style: solid;
-    border-radius: 10%;
-    
-}
-.article-contenedor__contenedor-imagen{
-    display: flex;
-    margin: auto;
-}
-.article-contenedor__imagen{
-    width: 250px;
-}
-.article-contenedor__parrafo{
-    text-align: justify;
-}
-
-.article-contenedor__boton{
+.article__form-boton{
     border-radius: 16px;
     height: 3rem;
     background-color: var(--button-color);
@@ -200,15 +196,35 @@
     transition: var(--all-transitions);
 
 }
-.article-contenedor__boton:hover{
+.article__form-boton:hover{
     box-shadow: 0 0 1rem #eeff00;
 }
-.article-contenedor__boton:active{
+.article__form-boton:active{
     background-color: var(--primary-theme-color);
 }
-
-@media (min-width: 1024px) {
-    .article{
-        flex-direction: row;
+.article__etiqueta{
+    font-size: 15px;
+    color: var(--text-color);
+}
+@media (min-width: 854px) {
+    .article__etiqueta{
+        font-size: 25px;
+    }
+    .article__form{
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+        width: 800PX;
+    }
+    .article_subContaider{
+        display: flex;
+        width: 800PX;
+        justify-content: space-between;
+    }
+    .article__textarea{
+        width: 400px;
+    }
+    .article__input{
+        width: 400px;
     }
   }

@@ -19,7 +19,22 @@
     --font-general: font-family: 'Anek Tamil', sans-serif;
   }
   
+  .container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.4fr 1.6fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header header header"
+      "contenedor contenedor contenedor"
+      "contenedor contenedor contenedor";
+  }
   
+  .header { grid-area: header; }
+  
+  .article { grid-area: contenedor; }
+  
+
   .body {
     background-image: linear-gradient(to bottom,var(--secondary-highlight),var(--primary-highlight));
     color: var(--text-color);

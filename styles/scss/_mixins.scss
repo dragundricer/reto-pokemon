@@ -1,0 +1,58 @@
+:root {
+    --primary-theme-color: #b12a2a;
+    --secondary-theme-color: #ff0000;
+    --text-color: #fff;
+    --shadow-color: #ffd900;
+    --button-color: #000dff;
+    --button-color-active: #fff;
+    --button-text-color: #000;
+    --primary-highlight: #ffd700;
+    --secondary-highlight: #ff0000;
+    --padding-section: 2em 0;
+    --padding-container: 0 2em;
+    --border-radius: 0.5rem;
+    --all-transitions: all 0.25s;
+    --font-general: font-family: 'Anek Tamil', sans-serif;
+  }
+
+  @mixin body{
+    background-color: var(--secondary-theme-color);
+    background-image: linear-gradient(to bottom,var(--secondary-highlight),var(--primary-highlight));
+    min-height:100vh;
+    color: var(--text-color);
+    font-family: var(--font-general);
+    margin: 0;
+}
+
+@mixin d-flex-fd-ai-jc-g($flex-direction: row, $align-items: stretch, $justify-content: stretch, $gap: 0) {
+    display: flex;
+    flex-direction: $flex-direction;
+    align-items: $align-items;
+    justify-content: $justify-content;
+    gap: $gap;
+  }
+
+@mixin titulo {
+    margin: auto;
+    padding-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1024px;
+}
+
+@mixin titulo-h {
+    font-size: 50px;
+    font-family: var(--font-primary);
+    padding: 0;
+    text-align: center;
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #2b00ff,
+    0 0 82px #2b00ff,
+    0 0 92px  #2b00ff,
+    0 0 102px #2b00ff,
+    0 0 151px #2b00ff;
+}

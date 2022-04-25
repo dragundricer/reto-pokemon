@@ -1,0 +1,62 @@
+* {
+    cursor: url(https://cur.cursors-4u.net/games/gam-13/gam1282.cur), auto !important;
+}
+
+:root {
+    --primary-theme-color: #b12a2a;
+    --secondary-theme-color: #ff0000;
+    --text-color: #ffd700;
+    --shadow-color: #0217ff;
+    --button-color: #1e00ff;
+    --button-color-active: #fff;
+    --button-text-color: #000;
+    --primary-highlight: #ffd700;
+    --secondary-highlight: #ff0000;
+    --padding-section: 2em 0;
+    --padding-container: 0 2em;
+    --border-radius: 0.5rem;
+    --all-transitions: all 0.25s;
+    --font-general: font-family: 'Anek Tamil', sans-serif;
+  }
+  
+  .container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.4fr 1.6fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header header header"
+      "contenedor contenedor contenedor"
+      "contenedor contenedor contenedor";
+  }
+  
+  .header { grid-area: header; }
+  
+  .article { grid-area: contenedor; }
+  
+
+  .body {
+    background-image: linear-gradient(to bottom,var(--secondary-highlight),var(--primary-highlight));
+  }
+.titulo{
+    margin: auto;
+    padding-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1024px;
+}
+.titulo__titulo-h{
+    font-size: 50px;
+    font-family: var(--font-primary);
+    padding: 0;
+    text-align: center;
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #2b00ff,
+    0 0 82px #2b00ff,
+    0 0 92px  #2b00ff,
+    0 0 102px #2b00ff,
+    0 0 151px #2b00ff;
